@@ -4,7 +4,7 @@ import dlib
 import sys
 from os.path import join
 
-#%%
+
 
 def load_model(model_path, caffemodel, prototxt):
     caffemodel_path = join(model_path, caffemodel)
@@ -23,7 +23,7 @@ def predict(model, img, height, width):
 
     return class_num, confidence
 
-#%%
+
 
 detector = dlib.get_frontal_face_detector()
 font, fontScale, fontColor, lineType = cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2
@@ -67,5 +67,4 @@ for f in sys.argv[1:]:
     if cv2.waitKey(0) & 0xFF == ord('q'):
         break
 
-#cap.release()
-#cv2.destroyAllWindows()
+
