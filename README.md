@@ -1,3 +1,4 @@
+**Note : You must download the models folder files from Google Drive which is found in Referencesthe and attach them to the project files**
 # Section One: Summary
 In this Project, I had used Deep Learning to accurately identify the gender and age of a person from a single image of a face. I used the models Winner of LAP challenge on apparent age estimation,The model was fine-tuned on the dataset of the ChaLearn apparent age estimation challenge. An ensemble of these models led to 1st place at the challenge (115 teams).  For age estimation the output layer has 101 neurons (0-100 years, one for each year). To obtain the predicted age, you need to take the expected value over the softmax-normalized output probabilities. For gender prediction the output layers has 2 neurons (0 for female, 1 for male).
 
